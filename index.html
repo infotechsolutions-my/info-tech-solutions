@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Info Tech Solutions provides IT support, computer repair, networking, cybersecurity and technology services for individuals and businesses.">
+  <title>Info Tech Solutions | Reliable IT Support</title>
+  <style>
+    :root{--navy:#10243a;--blue:#1769aa;--cyan:#39b7c9;--ink:#172536;--muted:#617184;--light:#f3f7fb;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}
+    a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+    header{background:var(--white);position:sticky;top:0;z-index:10;box-shadow:0 2px 14px #10243a12}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;color:var(--navy);font-size:1.12rem;display:flex;align-items:center;gap:10px}
+    .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:white;font-weight:900}
+    nav{display:flex;gap:24px;align-items:center;font-size:.94rem}nav a:hover{color:var(--blue)}
+    .button{display:inline-block;background:var(--blue);color:white;padding:12px 19px;border-radius:9px;font-weight:700;border:0;cursor:pointer}
+    .button:hover{background:#10558d}.button.outline{background:transparent;color:var(--blue);border:1px solid #b8cfe1}
+    .hero{background:radial-gradient(circle at 85% 20%,#236e9b 0,transparent 28%),linear-gradient(120deg,#10243a,#173e60);color:white;padding:88px 0 82px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:48px}
+    .eyebrow{color:#7fe0e7;text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800}
+    h1{font-size:clamp(2.5rem,5vw,4.4rem);line-height:1.08;letter-spacing:-1.8px;margin:14px 0 20px}
+    .hero p{font-size:1.1rem;color:#dce8f2;max-width:620px;margin-bottom:28px}
+    .hero .button{background:var(--cyan);color:#08263b}.hero .button.outline{color:white;border-color:#7996ae;margin-left:8px}
+    .tech-card{border:1px solid #ffffff35;background:#ffffff0d;border-radius:22px;padding:28px;backdrop-filter:blur(8px)}
+    .tech-card .big-icon{font-size:4rem;margin-bottom:8px}.tech-card h3{font-size:1.35rem;margin:4px 0}.tech-card p{font-size:.96rem;margin:0}
+    .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.mini{padding:14px;border-radius:12px;background:#ffffff12;font-size:.9rem}
+    section{padding:76px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 38px}.section-head h2{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.2;margin:0 0 12px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}
+    .services{background:var(--light)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:white;padding:26px;border-radius:16px;border:1px solid #e2eaf1;box-shadow:0 8px 24px #18344a08}
+    .icon{width:48px;height:48px;display:grid;place-items:center;background:#e8f5fa;border-radius:13px;font-size:1.5rem;margin-bottom:16px}
+    .card h3{margin:0 0 8px;color:var(--navy);font-size:1.12rem}.card p{margin:0;color:var(--muted);font-size:.96rem}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.about-panel{background:linear-gradient(145deg,#e9f5fb,#f7fbfd);padding:34px;border-radius:20px}
+    .about-panel h3{font-size:1.6rem;color:var(--navy);margin-top:0}.check{padding-left:0;list-style:none}.check li{margin:12px 0}.check li:before{content:"✓";color:#07879a;font-weight:900;margin-right:10px}
+    .about-copy h2{font-size:2.3rem;line-height:1.2;color:var(--navy);margin-top:0}.about-copy p{color:var(--muted)}
+    .cta{background:linear-gradient(120deg,#1769aa,#123b5c);color:white;text-align:center}.cta h2{font-size:clamp(1.9rem,3vw,2.8rem);margin:0 0 12px}.cta p{color:#dceaf5;max-width:650px;margin:0 auto 24px}.cta .button{background:var(--cyan);color:#08263b}
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px}.contact-info{background:var(--navy);color:white;border-radius:18px;padding:30px}.contact-info p{color:#d8e4ee}.contact-info h3{font-size:1.5rem;margin-top:0}.contact-item{margin:20px 0}.contact-item small{display:block;color:#9fc0d7}.contact-form{padding:8px 0}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{margin-bottom:16px}.field label{display:block;font-weight:700;font-size:.9rem;margin-bottom:6px}.field input,.field textarea,.field select{width:100%;padding:13px;border:1px solid #d3dee8;border-radius:9px;font:inherit;background:white}.field textarea{min-height:120px;resize:vertical}.form-note{font-size:.83rem;color:var(--muted)}
+    footer{background:#0b1b2b;color:#d4e0e9;padding:25px 0}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.9rem}
+    .mobile-menu{display:none}
+    @media(max-width:800px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:65px 0}.tech-card{max-width:520px}.cards{grid-template-columns:repeat(2,1fr)}nav{gap:12px;font-size:.85rem}}
+    @media(max-width:580px){.nav{padding:12px 0;align-items:flex-start;flex-direction:column}.brand{font-size:1rem}nav{width:100%;overflow:auto;padding-bottom:5px;gap:18px}.cards{grid-template-columns:1fr}.mini-grid,.form-row{grid-template-columns:1fr}section{padding:58px 0}.hero .button.outline{margin:10px 0 0 0}.hero h1{letter-spacing:-1px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home"><span class="logo">IT</span><span>INFO TECH SOLUTIONS</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Technology made simpler</div>
+        <h1>Reliable IT support for work and everyday life.</h1>
+        <p>Practical technology solutions for individuals and businesses — from computer troubleshooting and network setup to security and ongoing IT maintenance.</p>
+        <a class="button" href="#contact">Request a Quote</a>
+        <a class="button outline" href="#services">Explore Services</a>
+      </div>
+      <div class="tech-card">
+        <div class="big-icon">💻</div>
+        <h3>Your technology. Working better.</h3>
+        <p>Support for the devices, systems and networks you rely on every day.</p>
+        <div class="mini-grid">
+          <div class="mini">🛠️ Computer & laptop support</div>
+          <div class="mini">🛡️ Security solutions</div>
+          <div class="mini">📶 Network & Wi-Fi</div>
+          <div class="mini">🏢 Business IT support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2>IT services that keep you connected</h2>
+        <p>Flexible technology support for home users, professionals and small businesses. Contact us to discuss your requirements.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="icon">💻</div><h3>Computer & Laptop Support</h3><p>Troubleshooting, performance issues, device setup and general technical assistance.</p></article>
+        <article class="card"><div class="icon">🛡️</div><h3>Antivirus & Cybersecurity</h3><p>Security software setup, basic security checks and guidance to help protect your devices.</p></article>
+        <article class="card"><div class="icon">🏢</div><h3>Business IT Maintenance</h3><p>Practical IT support and maintenance planning for small offices and growing teams.</p></article>
+        <article class="card"><div class="icon">📶</div><h3>Networking & Wi-Fi</h3><p>Network setup, Wi-Fi troubleshooting, connectivity checks and device connections.</p></article>
+        <article class="card"><div class="icon">📹</div><h3>CCTV Solutions</h3><p>Enquiries for CCTV setup and troubleshooting, subject to site and equipment requirements.</p></article>
+        <article class="card"><div class="icon">⚙️</div><h3>Software & System Setup</h3><p>Software installation, system configuration and help resolving common software issues.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-panel">
+        <h3>A straightforward approach to IT</h3>
+        <ul class="check">
+          <li>Clear communication and practical recommendations</li>
+          <li>Solutions tailored to your needs</li>
+          <li>Support for individuals and small businesses</li>
+          <li>Service enquiries from across Malaysia and online</li>
+        </ul>
+      </div>
+      <div class="about-copy">
+        <div class="eyebrow" style="color:#16839a">About us</div>
+        <h2>Technology support you can understand.</h2>
+        <p>Info Tech Solutions helps people and businesses make better use of their technology. Whether you need help with a computer, a network, security software or routine IT maintenance, we aim to make the next step clear and manageable.</p>
+        <p><strong>Need something specific?</strong> Send us your requirements and we can discuss a suitable solution.</p>
+        <a class="button" href="#contact">Talk to Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Need help with an IT issue?</h2>
+      <p>Tell us what you need help with. We'll get back to you to discuss the next steps and a suitable solution.</p>
+      <a class="button" href="#contact">Contact Info Tech Solutions</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Let's talk about your IT needs</h2>
+        <p>Contact us by phone, email or WhatsApp. Replace the sample contact details below before publishing.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Info Tech Solutions</h3>
+          <p>For service enquiries, support requests and quotations.</p>
+          <div class="contact-item"><small>PHONE</small><strong>[Add your phone number]</strong></div>
+          <div class="contact-item"><small>EMAIL</small><strong>[Add your business email]</strong></div>
+          <div class="contact-item"><small>WHATSAPP</small><strong>[Add your WhatsApp number]</strong></div>
+          <div class="contact-item"><small>SERVICE AREA</small><strong>Malaysia & online support worldwide</strong></div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="field"><label for="name">Your name</label><input id="name" name="name" required placeholder="Name"></div>
+            <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
+          </div>
+          <div class="field"><label for="service">What do you need help with?</label>
+            <select id="service" name="service"><option>Computer / laptop support</option><option>Antivirus / cybersecurity</option><option>Business IT maintenance</option><option>Networking / Wi-Fi</option><option>CCTV</option><option>Software / system setup</option><option>Other enquiry</option></select>
+          </div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" required placeholder="Briefly describe what you need..."></textarea></div>
+          <button class="button" type="submit">Prepare Email Enquiry</button>
+          <p class="form-note">This starter form opens your email app; it does not store or send information to a server. Add your business email in the code before launch.</p>
+          <p id="formStatus" class="form-note" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container footer-row">
+    <span>© <span id="year"></span> Info Tech Solutions. All rights reserved.</span>
+    <span>Reliable support. Practical solutions.</span>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Replace this placeholder with your actual business email before publishing.
+    const businessEmail = 'YOUR-BUSINESS-EMAIL@example.com';
+    if (businessEmail === 'YOUR-BUSINESS-EMAIL@example.com') {
+      document.getElementById('formStatus').textContent = 'The form is a demo. Add your business email in index.html to enable email enquiries.';
+      return;
+    }
+    const d = new FormData(this);
+    const subject = encodeURIComponent('Website enquiry - ' + d.get('service'));
+    const body = encodeURIComponent('Name: ' + d.get('name') + '\\nEmail: ' + d.get('email') + '\\nService: ' + d.get('service') + '\\n\\nMessage:\\n' + d.get('message'));
+    window.location.href = 'mailto:' + businessEmail + '?subject=' + subject + '&body=' + body;
+  });
+</script>
+</body>
+</html>
