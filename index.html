@@ -122,33 +122,122 @@
   </section>
 
   <section id="contact">
-    <div class="container">
-      <div class="section-head">
-        <h2>Let's talk about your IT needs</h2>
-        <p>Contact us by phone, email or WhatsApp. Replace the sample contact details below before publishing.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h3>Contact Info Tech Solutions</h3>
-          <p>For service enquiries, support requests and quotations.</p>
-          <div class="contact-item"><small>PHONE</small><strong>[Add your phone number]</strong></div>
-          <div class="contact-item"><small>EMAIL</small><strong>[Add your business email]</strong></div>
-          <div class="contact-item"><small>WHATSAPP</small><strong>[Add your WhatsApp number]</strong></div>
-          <div class="contact-item"><small>SERVICE AREA</small><strong>Malaysia & online support worldwide</strong></div>
+  <div class="container">
+
+    <div class="section-head">
+      <h2>Let's talk about your IT needs</h2>
+      <p>Contact us by phone, email or WhatsApp for professional IT support.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- CONTACT INFORMATION -->
+      <div class="contact-info">
+
+        <h3>Contact Info Tech Solutions</h3>
+
+        <p>For service enquiries, support requests and quotations.</p>
+
+        <div class="contact-item">
+          <small>PHONE</small>
+          <strong>
+            <a href="tel:+601161881143">+60 11-6188 1143</a>
+          </strong>
         </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-row">
-            <div class="field"><label for="name">Your name</label><input id="name" name="name" required placeholder="Name"></div>
-            <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
+
+        <div class="contact-item">
+          <small>EMAIL</small>
+          <strong>
+            <a href="mailto:infotechsolutions77@gmail.com">
+              infotechsolutions77@gmail.com
+            </a>
+          </strong>
+        </div>
+
+        <div class="contact-item">
+          <small>WHATSAPP</small>
+          <strong>
+            <a href="https://wa.me/601161881143"
+               target="_blank"
+               rel="noopener noreferrer">
+              Chat with us on WhatsApp
+            </a>
+          </strong>
+        </div>
+
+        <div class="contact-item">
+          <small>SERVICE AREA</small>
+          <strong>Malaysia &amp; online support worldwide</strong>
+        </div>
+
+      </div>
+
+      <!-- CONTACT FORM -->
+      <form class="contact-form" id="contactForm">
+
+        <div class="form-row">
+
+          <div class="field">
+            <label for="name">Your name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              placeholder="Enter your name">
           </div>
-          <div class="field"><label for="service">What do you need help with?</label>
-            <select id="service" name="service"><option>Computer / laptop support</option><option>Antivirus / cybersecurity</option><option>Business IT maintenance</option><option>Networking / Wi-Fi</option><option>CCTV</option><option>Software / system setup</option><option>Other enquiry</option></select>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="you@example.com">
           </div>
-          <div class="field"><label for="message">Message</label><textarea id="message" name="message" required placeholder="Briefly describe what you need..."></textarea></div>
-          <button class="button" type="submit">Prepare Email Enquiry</button>
-          <p class="form-note">This starter form opens your email app; it does not store or send information to a server. Add your business email in the code before launch.</p>
-          <p id="formStatus" class="form-note" role="status"></p>
-        </form>
+
+        </div>
+
+        <div class="field">
+          <label for="service">What do you need help with?</label>
+
+          <select id="service" name="service">
+            <option>Computer / laptop support</option>
+            <option>Antivirus / cybersecurity</option>
+            <option>Business IT maintenance</option>
+            <option>Networking / Wi-Fi</option>
+            <option>CCTV</option>
+            <option>Software / system setup</option>
+            <option>Other enquiry</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Briefly describe what you need..."></textarea>
+        </div>
+
+        <button class="button" type="submit">
+          Prepare Email Enquiry
+        </button>
+
+        <p class="form-note">
+          Submit your enquiry using your email application.
+        </p>
+
+        <p id="formStatus" class="form-note" role="status"></p>
+
+      </form>
+
+    </div>
+  </div>
+</section>
       </div>
     </div>
   </section>
