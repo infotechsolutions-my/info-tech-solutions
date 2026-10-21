@@ -3,266 +3,758 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Info Tech Solutions provides IT support, computer repair, networking, cybersecurity and technology services for individuals and businesses.">
-  <title>Info Tech Solutions | Reliable IT Support</title>
+
+  <title>Info Tech Solutions | IT Support & Cybersecurity Malaysia</title>
+
+  <meta name="description"
+        content="Info Tech Solutions provides computer support, laptop repair, cybersecurity, networking, Wi-Fi and CCTV services in Malaysia.">
+
+  <meta name="theme-color" content="#071426">
+
   <style>
-    :root{--navy:#10243a;--blue:#1769aa;--cyan:#39b7c9;--ink:#172536;--muted:#617184;--light:#f3f7fb;--white:#fff}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}
-    a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
-    header{background:var(--white);position:sticky;top:0;z-index:10;box-shadow:0 2px 14px #10243a12}
-    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{font-weight:800;color:var(--navy);font-size:1.12rem;display:flex;align-items:center;gap:10px}
-    .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:white;font-weight:900}
-    nav{display:flex;gap:24px;align-items:center;font-size:.94rem}nav a:hover{color:var(--blue)}
-    .button{display:inline-block;background:var(--blue);color:white;padding:12px 19px;border-radius:9px;font-weight:700;border:0;cursor:pointer}
-    .button:hover{background:#10558d}.button.outline{background:transparent;color:var(--blue);border:1px solid #b8cfe1}
-    .hero{background:radial-gradient(circle at 85% 20%,#236e9b 0,transparent 28%),linear-gradient(120deg,#10243a,#173e60);color:white;padding:88px 0 82px}
-    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:48px}
-    .eyebrow{color:#7fe0e7;text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800}
-    h1{font-size:clamp(2.5rem,5vw,4.4rem);line-height:1.08;letter-spacing:-1.8px;margin:14px 0 20px}
-    .hero p{font-size:1.1rem;color:#dce8f2;max-width:620px;margin-bottom:28px}
-    .hero .button{background:var(--cyan);color:#08263b}.hero .button.outline{color:white;border-color:#7996ae;margin-left:8px}
-    .tech-card{border:1px solid #ffffff35;background:#ffffff0d;border-radius:22px;padding:28px;backdrop-filter:blur(8px)}
-    .tech-card .big-icon{font-size:4rem;margin-bottom:8px}.tech-card h3{font-size:1.35rem;margin:4px 0}.tech-card p{font-size:.96rem;margin:0}
-    .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.mini{padding:14px;border-radius:12px;background:#ffffff12;font-size:.9rem}
-    section{padding:76px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 38px}.section-head h2{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.2;margin:0 0 12px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}
-    .services{background:var(--light)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .card{background:white;padding:26px;border-radius:16px;border:1px solid #e2eaf1;box-shadow:0 8px 24px #18344a08}
-    .icon{width:48px;height:48px;display:grid;place-items:center;background:#e8f5fa;border-radius:13px;font-size:1.5rem;margin-bottom:16px}
-    .card h3{margin:0 0 8px;color:var(--navy);font-size:1.12rem}.card p{margin:0;color:var(--muted);font-size:.96rem}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.about-panel{background:linear-gradient(145deg,#e9f5fb,#f7fbfd);padding:34px;border-radius:20px}
-    .about-panel h3{font-size:1.6rem;color:var(--navy);margin-top:0}.check{padding-left:0;list-style:none}.check li{margin:12px 0}.check li:before{content:"✓";color:#07879a;font-weight:900;margin-right:10px}
-    .about-copy h2{font-size:2.3rem;line-height:1.2;color:var(--navy);margin-top:0}.about-copy p{color:var(--muted)}
-    .cta{background:linear-gradient(120deg,#1769aa,#123b5c);color:white;text-align:center}.cta h2{font-size:clamp(1.9rem,3vw,2.8rem);margin:0 0 12px}.cta p{color:#dceaf5;max-width:650px;margin:0 auto 24px}.cta .button{background:var(--cyan);color:#08263b}
-    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px}.contact-info{background:var(--navy);color:white;border-radius:18px;padding:30px}.contact-info p{color:#d8e4ee}.contact-info h3{font-size:1.5rem;margin-top:0}.contact-item{margin:20px 0}.contact-item small{display:block;color:#9fc0d7}.contact-form{padding:8px 0}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{margin-bottom:16px}.field label{display:block;font-weight:700;font-size:.9rem;margin-bottom:6px}.field input,.field textarea,.field select{width:100%;padding:13px;border:1px solid #d3dee8;border-radius:9px;font:inherit;background:white}.field textarea{min-height:120px;resize:vertical}.form-note{font-size:.83rem;color:var(--muted)}
-    footer{background:#0b1b2b;color:#d4e0e9;padding:25px 0}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.9rem}
-    .mobile-menu{display:none}
-    @media(max-width:800px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:65px 0}.tech-card{max-width:520px}.cards{grid-template-columns:repeat(2,1fr)}nav{gap:12px;font-size:.85rem}}
-    @media(max-width:580px){.nav{padding:12px 0;align-items:flex-start;flex-direction:column}.brand{font-size:1rem}nav{width:100%;overflow:auto;padding-bottom:5px;gap:18px}.cards{grid-template-columns:1fr}.mini-grid,.form-row{grid-template-columns:1fr}section{padding:58px 0}.hero .button.outline{margin:10px 0 0 0}.hero h1{letter-spacing:-1px}}
+    :root {
+      --bg: #071426;
+      --panel: #10233c;
+      --blue: #38bdf8;
+      --white: #f8fafc;
+      --muted: #b8c6d9;
+      --green: #25d366;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: #091a30;
+      border-bottom: 1px solid #243b55;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--white);
+    }
+
+    .logo span {
+      color: var(--blue);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .hero {
+      padding: 100px 0;
+      background:
+        radial-gradient(ellipse at top right, #164e78 0%, transparent 48%),
+        linear-gradient(135deg, #071426, #102744);
+    }
+
+    .hero-content {
+      max-width: 780px;
+    }
+
+    .badge {
+      display: inline-block;
+      color: var(--blue);
+      border: 1px solid #245477;
+      background: #102b45;
+      padding: 7px 14px;
+      border-radius: 30px;
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 62px);
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+
+    h1 span {
+      color: var(--blue);
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      border: none;
+      border-radius: 8px;
+      padding: 13px 21px;
+      background: var(--blue);
+      color: #061426;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .button:hover {
+      opacity: 0.88;
+    }
+
+    .button-outline {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid #52708e;
+    }
+
+    section {
+      padding: 75px 0;
+      scroll-margin-top: 80px;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 42px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(28px, 4vw, 38px);
+      margin-bottom: 12px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid #233b57;
+      border-radius: 14px;
+      padding: 27px;
+    }
+
+    .card .icon {
+      font-size: 32px;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 19px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .about {
+      background: #0a1b30;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about h2 {
+      font-size: 34px;
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+
+    .about p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .check-list {
+      list-style: none;
+    }
+
+    .check-list li {
+      margin: 12px 0;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: var(--blue);
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .about-box {
+      background: var(--panel);
+      border: 1px solid #29435f;
+      border-radius: 16px;
+      padding: 30px;
+    }
+
+    .about-box h3 {
+      margin-bottom: 14px;
+    }
+
+    .about-box p {
+      margin-bottom: 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .contact-info,
+    .contact-form {
+      background: var(--panel);
+      border: 1px solid #29435f;
+      border-radius: 14px;
+      padding: 28px;
+      min-width: 0;
+    }
+
+    .contact-info h3 {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    .contact-info > p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .contact-item {
+      margin-top: 20px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-item small {
+      display: block;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .contact-item strong,
+    .contact-item a {
+      color: var(--white);
+      font-size: 15px;
+    }
+
+    .contact-item a:hover {
+      color: var(--blue);
+      text-decoration: underline;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .field {
+      margin-bottom: 18px;
+      min-width: 0;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 14px;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      min-width: 0;
+      padding: 12px;
+      border: 1px solid #3b536f;
+      border-radius: 7px;
+      background: #071426;
+      color: var(--white);
+      font: inherit;
+      font-size: 14px;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      outline: 2px solid var(--blue);
+      outline-offset: 1px;
+    }
+
+    .field textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 99;
+      display: inline-block;
+      background: var(--green);
+      color: #052b17;
+      font-weight: 700;
+      padding: 13px 18px;
+      border-radius: 30px;
+      box-shadow: 0 5px 20px #0005;
+    }
+
+    footer {
+      border-top: 1px solid #243b55;
+      background: #050f1d;
+      padding: 28px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 800px) {
+      .navbar {
+        padding: 16px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav {
+        gap: 12px 18px;
+      }
+
+      .hero {
+        padding: 75px 0;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .services-grid,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 55px 0;
+      }
+
+      .card,
+      .contact-info,
+      .contact-form {
+        padding: 21px;
+      }
+
+      .whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+      }
+    }
   </style>
 </head>
+
 <body>
-<header>
-  <div class="container nav">
-    <a class="brand" href="#home"><span class="logo">IT</span><span>INFO TECH SOLUTIONS</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
 
-<main>
-  <section class="hero" id="home">
-    <div class="container hero-grid">
-      <div>
-        <div class="eyebrow">Technology made simpler</div>
-        <h1>Reliable IT support for work and everyday life.</h1>
-        <p>Practical technology solutions for individuals and businesses — from computer troubleshooting and network setup to security and ongoing IT maintenance.</p>
-        <a class="button" href="#contact">Request a Quote</a>
-        <a class="button outline" href="#services">Explore Services</a>
-      </div>
-      <div class="tech-card">
-        <div class="big-icon">💻</div>
-        <h3>Your technology. Working better.</h3>
-        <p>Support for the devices, systems and networks you rely on every day.</p>
-        <div class="mini-grid">
-          <div class="mini">🛠️ Computer & laptop support</div>
-          <div class="mini">🛡️ Security solutions</div>
-          <div class="mini">📶 Network & Wi-Fi</div>
-          <div class="mini">🏢 Business IT support</div>
-        </div>
-      </div>
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="#home">INFO <span>TECH</span> SOLUTIONS</a>
+
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-head">
-        <h2>IT services that keep you connected</h2>
-        <p>Flexible technology support for home users, professionals and small businesses. Contact us to discuss your requirements.</p>
-      </div>
-      <div class="cards">
-        <article class="card"><div class="icon">💻</div><h3>Computer & Laptop Support</h3><p>Troubleshooting, performance issues, device setup and general technical assistance.</p></article>
-        <article class="card"><div class="icon">🛡️</div><h3>Antivirus & Cybersecurity</h3><p>Security software setup, basic security checks and guidance to help protect your devices.</p></article>
-        <article class="card"><div class="icon">🏢</div><h3>Business IT Maintenance</h3><p>Practical IT support and maintenance planning for small offices and growing teams.</p></article>
-        <article class="card"><div class="icon">📶</div><h3>Networking & Wi-Fi</h3><p>Network setup, Wi-Fi troubleshooting, connectivity checks and device connections.</p></article>
-        <article class="card"><div class="icon">📹</div><h3>CCTV Solutions</h3><p>Enquiries for CCTV setup and troubleshooting, subject to site and equipment requirements.</p></article>
-        <article class="card"><div class="icon">⚙️</div><h3>Software & System Setup</h3><p>Software installation, system configuration and help resolving common software issues.</p></article>
-      </div>
-    </div>
-  </section>
+  <main>
 
-  <section id="about">
-    <div class="container about-grid">
-      <div class="about-panel">
-        <h3>A straightforward approach to IT</h3>
-        <ul class="check">
-          <li>Clear communication and practical recommendations</li>
-          <li>Solutions tailored to your needs</li>
-          <li>Support for individuals and small businesses</li>
-          <li>Service enquiries from across Malaysia and online</li>
-        </ul>
-      </div>
-      <div class="about-copy">
-        <div class="eyebrow" style="color:#16839a">About us</div>
-        <h2>Technology support you can understand.</h2>
-        <p>Info Tech Solutions helps people and businesses make better use of their technology. Whether you need help with a computer, a network, security software or routine IT maintenance, we aim to make the next step clear and manageable.</p>
-        <p><strong>Need something specific?</strong> Send us your requirements and we can discuss a suitable solution.</p>
-        <a class="button" href="#contact">Talk to Us</a>
-      </div>
-    </div>
-  </section>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <span class="badge">YOUR IT SUPPORT PARTNER</span>
 
-  <section class="cta">
-    <div class="container">
-      <h2>Need help with an IT issue?</h2>
-      <p>Tell us what you need help with. We'll get back to you to discuss the next steps and a suitable solution.</p>
-      <a class="button" href="#contact">Contact Info Tech Solutions</a>
-    </div>
-  </section>
+          <h1>
+            Smart IT Solutions for
+            <span>Your Business</span>
+          </h1>
 
-  <section id="contact">
-  <div class="container">
+          <p>
+            Reliable technology support for computers, laptops,
+            cybersecurity, networking and business IT needs.
+            We help keep your technology running smoothly.
+          </p>
 
-    <div class="section-head">
-      <h2>Let's talk about your IT needs</h2>
-      <p>Contact us by phone, email or WhatsApp for professional IT support.</p>
-    </div>
+          <div class="buttons">
+            <a class="button" href="#services">Explore Our Services</a>
 
-    <div class="contact-grid">
-
-      <!-- CONTACT INFORMATION -->
-      <div class="contact-info">
-
-        <h3>Contact Info Tech Solutions</h3>
-
-        <p>For service enquiries, support requests and quotations.</p>
-
-        <div class="contact-item">
-          <small>PHONE</small>
-          <strong>
-            <a href="tel:+601161881143">+60 11-6188 1143</a>
-          </strong>
-        </div>
-
-        <div class="contact-item">
-          <small>EMAIL</small>
-          <strong>
-            <a href="mailto:infotechsolutions77@gmail.com">
-              infotechsolutions77@gmail.com
-            </a>
-          </strong>
-        </div>
-
-        <div class="contact-item">
-          <small>WHATSAPP</small>
-          <strong>
-            <a href="https://wa.me/601161881143"
+            <a class="button button-outline"
+               href="https://wa.me/601161881143"
                target="_blank"
                rel="noopener noreferrer">
-              Chat with us on WhatsApp
+              Contact Us on WhatsApp
             </a>
-          </strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+
+        <div class="section-head">
+          <h2>Our IT Services</h2>
+          <p>
+            Practical technology solutions for individuals
+            and businesses.
+          </p>
         </div>
 
-        <div class="contact-item">
-          <small>SERVICE AREA</small>
-          <strong>Malaysia &amp; online support worldwide</strong>
+        <div class="services-grid">
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">💻</div>
+            <h3>Computer &amp; Laptop Support</h3>
+            <p>
+              Troubleshooting, system setup, software installation
+              and computer performance assistance.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">🛡️</div>
+            <h3>Antivirus &amp; Cybersecurity</h3>
+            <p>
+              Security software setup, malware protection guidance
+              and practical security maintenance.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">🌐</div>
+            <h3>Networking &amp; Wi-Fi</h3>
+            <p>
+              Network configuration, Wi-Fi troubleshooting
+              and connectivity support.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">🏢</div>
+            <h3>Business IT Maintenance</h3>
+            <p>
+              IT troubleshooting, computer maintenance
+              and technology support for offices.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">📹</div>
+            <h3>CCTV Solutions</h3>
+            <p>
+              CCTV system enquiries, setup assistance
+              and troubleshooting support.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">⚙️</div>
+            <h3>Software &amp; System Setup</h3>
+            <p>
+              Operating system configuration, software installation
+              and new computer setup.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+
+        <div>
+          <h2>Technology support made simple.</h2>
+
+          <p>
+            Info Tech Solutions helps customers address their
+            everyday IT challenges with practical technical
+            support and technology solutions.
+          </p>
+
+          <p>
+            Whether you need computer assistance, network support
+            or advice about protecting your devices, get in touch
+            to discuss your requirements.
+          </p>
+
+          <a class="button" href="#contact">Talk to Our Team</a>
+        </div>
+
+        <div class="about-box">
+          <h3>How We Can Help</h3>
+
+          <ul class="check-list">
+            <li>Computer and laptop troubleshooting</li>
+            <li>IT support for office environments</li>
+            <li>Network and connectivity assistance</li>
+            <li>Security software and system setup</li>
+            <li>Technology support enquiries</li>
+          </ul>
         </div>
 
       </div>
+    </section>
 
-      <!-- CONTACT FORM -->
-      <form class="contact-form" id="contactForm">
+    <section id="contact">
+      <div class="container">
 
-        <div class="form-row">
+        <div class="section-head">
+          <h2>Let's Talk About Your IT Needs</h2>
+          <p>
+            Contact Info Tech Solutions for service enquiries,
+            support requests and quotations.
+          </p>
+        </div>
 
-          <div class="field">
-            <label for="name">Your name</label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              required
-              placeholder="Enter your name">
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+
+            <p>
+              Have a question or need IT support?
+              Contact us using any of the options below.
+            </p>
+
+            <div class="contact-item">
+              <small>PHONE</small>
+              <strong>
+                <a href="tel:+601161881143">+60 11-6188 1143</a>
+              </strong>
+            </div>
+
+            <div class="contact-item">
+              <small>EMAIL</small>
+              <strong>
+                <a href="mailto:infotechsolutions77@gmail.com">
+                  infotechsolutions77@gmail.com
+                </a>
+              </strong>
+            </div>
+
+            <div class="contact-item">
+              <small>WHATSAPP</small>
+              <strong>
+                <a href="https://wa.me/601161881143"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  Chat with Us on WhatsApp
+                </a>
+              </strong>
+            </div>
+
+            <div class="contact-item">
+              <small>SERVICE AREA</small>
+              <strong>Malaysia &amp; online support worldwide</strong>
+            </div>
           </div>
 
-          <div class="field">
-            <label for="email">Email address</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              placeholder="you@example.com">
-          </div>
+          <form class="contact-form" id="contactForm">
+
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Your Name</label>
+                <input id="name"
+                       name="name"
+                       type="text"
+                       autocomplete="name"
+                       placeholder="Enter your name"
+                       required>
+              </div>
+
+              <div class="field">
+                <label for="email">Your Email</label>
+                <input id="email"
+                       name="email"
+                       type="email"
+                       autocomplete="email"
+                       placeholder="you@example.com"
+                       required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="service">Service Required</label>
+              <select id="service" name="service">
+                <option>Computer / Laptop Support</option>
+                <option>Antivirus / Cybersecurity</option>
+                <option>Business IT Maintenance</option>
+                <option>Networking / Wi-Fi</option>
+                <option>CCTV</option>
+                <option>Software / System Setup</option>
+                <option>Other Enquiry</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Your Message</label>
+              <textarea id="message"
+                        name="message"
+                        placeholder="Tell us how we can help..."
+                        required></textarea>
+            </div>
+
+            <button class="button" type="submit">
+              Prepare Email Enquiry
+            </button>
+
+            <p class="form-note" id="formStatus" role="status">
+              Your email application will open with your enquiry.
+            </p>
+
+          </form>
 
         </div>
-
-        <div class="field">
-          <label for="service">What do you need help with?</label>
-
-          <select id="service" name="service">
-            <option>Computer / laptop support</option>
-            <option>Antivirus / cybersecurity</option>
-            <option>Business IT maintenance</option>
-            <option>Networking / Wi-Fi</option>
-            <option>CCTV</option>
-            <option>Software / system setup</option>
-            <option>Other enquiry</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="message">Message</label>
-
-          <textarea
-            id="message"
-            name="message"
-            required
-            placeholder="Briefly describe what you need..."></textarea>
-        </div>
-
-        <button class="button" type="submit">
-          Prepare Email Enquiry
-        </button>
-
-        <p class="form-note">
-          Submit your enquiry using your email application.
-        </p>
-
-        <p id="formStatus" class="form-note" role="status"></p>
-
-      </form>
-
-    </div>
-  </div>
-</section>
       </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Info Tech Solutions</strong></p>
+      <p>IT Support | Cybersecurity | Networking | Business IT</p>
+      <p>&copy; <span id="year"></span> Info Tech Solutions. All rights reserved.</p>
     </div>
-  </section>
-</main>
-<footer>
-  <div class="container footer-row">
-    <span>© <span id="year"></span> Info Tech Solutions. All rights reserved.</span>
-    <span>Reliable support. Practical solutions.</span>
-  </div>
-</footer>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    // Replace this placeholder with your actual business email before publishing.
-    const businessEmail = 'YOUR-BUSINESS-EMAIL@example.com';
-    if (businessEmail === 'YOUR-BUSINESS-EMAIL@example.com') {
-      document.getElementById('formStatus').textContent = 'The form is a demo. Add your business email in index.html to enable email enquiries.';
-      return;
-    }
-    const d = new FormData(this);
-    const subject = encodeURIComponent('Website enquiry - ' + d.get('service'));
-    const body = encodeURIComponent('Name: ' + d.get('name') + '\\nEmail: ' + d.get('email') + '\\nService: ' + d.get('service') + '\\n\\nMessage:\\n' + d.get('message'));
-    window.location.href = 'mailto:' + businessEmail + '?subject=' + subject + '&body=' + body;
-  });
-</script>
+  </footer>
+
+  <a class="whatsapp-float"
+     href="https://wa.me/601161881143"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat with Info Tech Solutions on WhatsApp">
+    WhatsApp Us
+  </a>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    const contactForm = document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const service = document.getElementById("service").value;
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+        document.getElementById("formStatus").textContent =
+          "Please complete all required fields.";
+        return;
+      }
+
+      const subject = encodeURIComponent(
+        "IT Service Enquiry - " + service
+      );
+
+      const body = encodeURIComponent(
+        "Name: " + name + "\n" +
+        "Customer Email: " + email + "\n" +
+        "Service Required: " + service + "\n\n" +
+        "Message:\n" + message
+      );
+
+      document.getElementById("formStatus").textContent =
+        "Opening your email application...";
+
+      window.location.href =
+        "mailto:infotechsolutions77@gmail.com" +
+        "?subject=" + subject +
+        "&body=" + body;
+    });
+  </script>
+
 </body>
 </html>
